@@ -3,10 +3,22 @@
  *
  * Description: Main app module
  */
-var app = angular.module('knox', ['ui.bootstrap']);
+'use strict';
 
-app.config(['',
-  function() {
+var app = angular.module('knox', ['ngSanitize', 'ngRoute', 'ngAnimate', 'ui.bootstrap']);
+
+app.config(['$locationProvider', '$routeProvider',
+  function($locationProvider, $routeProvider) {
+    $routeProvider
+      .when('/', {
+        templateUrl: 'home/home.html',
+        controller: 'HomeController'
+      })
+      .otherwise({
+        redirectTo: '/'
+      });
+
+    $locationProvider.html5Mode(true).hashPrefix('!');
 
   }
 ]);
