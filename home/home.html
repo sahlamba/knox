@@ -1,2 +1,13 @@
 <section id="landing">
+  <div class="logo">
+    <img src="../logo.png">
+  </div>
+  <h1 ng-bind="tagline"></h1>
+  <div class="nav">
+    <ul>
+      <li ng-repeat="value in navObject | orderBy:'value.index'">
+        <a ng-href="{{value.link}}">{{value.text}}</a>
+      </li>
+    </ul>
+  </div>
 </section>

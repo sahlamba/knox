@@ -23,8 +23,30 @@ app.config(['$locationProvider', '$routeProvider',
   }
 ]);
 
-app.controller('MainController', ['$scope',
-  function($scope) {
+app.controller('MainController', ['$scope', '$rootScope',
+  function($scope, $rootScope) {
     $scope.title = 'Team KNOx IIT Roorkee';
+
+    $rootScope.navObject = [{
+      'index': 1,
+      'text': 'About',
+      'link': '/about'
+    }, {
+      'index': 2,
+      'text': 'Aim',
+      'link': '/aim'
+    }, {
+      'index': 3,
+      'text': 'History',
+      'link': '/history'
+    }, {
+      'index': 4,
+      'text': 'Sponsorship',
+      'link': '/sponsorship'
+    }, {
+      'index': 5,
+      'text': 'Contact Us',
+      'link': '/contact'
+    }];
   }
 ]);
