@@ -11,9 +11,26 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/bootstrap-theme.css">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/ng-animations.css">
 </head>
 <body class="ng-cloak" ng-cloak>
-  <div ng-view></div>
+  <div ng-view class="slide-top"></div>
+  <!-- Navigation Template -->
+  <script type="text/ng-template" id="navigation">
+    <div class="top-bar" sticky>
+      <div class="logo">
+        <a href="#/"><img src="logo.png"></a>
+      </div>
+      <div class="nav-bar">
+        <ul>
+          <li ng-repeat="value in navObject | orderBy:'value.index'">
+            <a ng-href="{{value.link}}">{{value.text}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="top-bar-margin-cover"></div>
+  </script>
   <!-- Dependencies -->
   <script src="scripts/angular.min.js"></script>
   <script src="scripts/angular-sanitize.min.js"></script>
@@ -24,5 +41,6 @@
   <script src="scripts/app.js"></script>
   <!-- Controllers -->
   <script src="home/home.js"></script>
+  <script src="about/about.js"></script>
 </body>
 </html>

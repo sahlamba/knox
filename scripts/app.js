@@ -14,11 +14,15 @@ app.config(['$locationProvider', '$routeProvider',
         templateUrl: 'home/home.html',
         controller: 'HomeController'
       })
+      .when('/about', {
+        templateUrl: 'about/about.html',
+        controller: 'AboutController'
+      })
       .otherwise({
         redirectTo: '/'
       });
 
-    $locationProvider.html5Mode(true).hashPrefix('!');
+    // $locationProvider.html5Mode(true).hashPrefix('!');
 
   }
 ]);
@@ -30,23 +34,25 @@ app.controller('MainController', ['$scope', '$rootScope',
     $rootScope.navObject = [{
       'index': 1,
       'text': 'About',
-      'link': '/about'
+      'link': '#/about'
     }, {
       'index': 2,
-      'text': 'Aim',
-      'link': '/aim'
+      'text': 'BAJA',
+      'link': '#/baja'
     }, {
       'index': 3,
-      'text': 'History',
-      'link': '/history'
+      'text': 'Garage',
+      'link': '#/garage'
     }, {
       'index': 4,
       'text': 'Sponsorship',
-      'link': '/sponsorship'
+      'link': '#/sponsorship'
     }, {
       'index': 5,
       'text': 'Contact Us',
-      'link': '/contact'
+      'link': '#/contact'
     }];
+
+    $scope.year = (new Date()).getFullYear();
   }
 ]);
