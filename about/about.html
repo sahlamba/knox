@@ -1,9 +1,46 @@
 <section id="about">
   <div ng-include src="'navigation'"></div>
-  <div class="w50 lr-padding tb-padding40">
-    <h3 ng-bind="about.title"></h3>
-    <p ng-bind="about.desc"></p>
+  <div class="row">
+    <div class="col-lg-6 lr-padding tb-padding40">
+      <h2 class="text-center" ng-bind="about.title"></h2>
+      <p ng-bind="about.desc"></p>
+    </div>
+    <div class="col-lg-6 race-bg padding0 toggle">
+    </div>
+    <div class="col-lg-12 lr-padding tb-padding40 bg-grey">
+      <div class="row">
+        <div class="col-lg-8">
+          <h2 class="text-center" ng-bind="aim.title"></h2>
+          <p ng-repeat="aim in aim.aims" ng-bind="aim"></p>
+        </div>
+        <div class="col-lg-4">
+          <h1 class="icon" ng-bind="aim.gist"></h1>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="w50 race-bg">
+</section>
+<section id="team">
+  <div class="row lr-padding">
+    <h2 class="text-center" ng-bind="team.title">Team</h2>
+    <p class="text-center light-text">Season {{team.season}}</p>
+    <div class="col-lg-4 text-center team-member" ng-repeat="senior in team.seniors">
+      <div class="pic">
+        <img ng-src="about/team/{{senior.img}}.jpg" class="toggle">
+      </div>
+      <div class="info">
+        <h4 ng-bind="senior.name"></h4>
+        <p class="light-text" ng-bind="senior.post"></p>
+      </div>
+    </div>
+    <div class="col-lg-3 text-center team-member" ng-repeat="member in team.members">
+      <div class="pic">
+        <img ng-src="about/team/{{member.img}}.jpg" class="toggle">
+      </div>
+      <div class="info">
+        <h4 ng-bind="member.name"></h4>
+        <p class="light-text" ng-bind="member.post"></p>
+      </div>
+    </div>
   </div>
 </section>

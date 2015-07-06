@@ -1,25 +1,26 @@
 <!DOCTYPE>
 <html lang="en" ng-app="knox" ng-controller="MainController">
 <head>
-  <base href="/knox/">
+  <base href="/">
   <title ng-bind="title"></title>
   <meta charset="utf-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <link rel="shortcut icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/bootstrap-theme.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/ng-animations.css">
 </head>
 <body class="ng-cloak" ng-cloak>
-  <div ng-view class="slide-top"></div>
+  <div ng-view class="slide-top" autoscroll></div>
   <!-- Navigation Template -->
   <script type="text/ng-template" id="navigation">
     <div class="top-bar" sticky>
       <div class="logo">
-        <a href="#/"><img src="logo.png"></a>
+        <a href="#/"><img src="logo.png" class="toggle"></a>
       </div>
       <div class="nav-bar">
         <ul>
