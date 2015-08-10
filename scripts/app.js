@@ -11,12 +11,16 @@ app.config(['$locationProvider', '$routeProvider',
   function($locationProvider, $routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'home/home.html',
+        templateUrl: 'pages/home/home.html',
         controller: 'HomeController'
       })
       .when('/about', {
-        templateUrl: 'about/about.html',
+        templateUrl: 'pages/about/about.html',
         controller: 'AboutController'
+      })
+      .when('/garage', {
+        templateUrl: 'pages/history/history.html',
+        controller: 'HistoryController'
       })
       .otherwise({
         redirectTo: '/'
