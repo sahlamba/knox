@@ -30,16 +30,16 @@ app.controller('AboutController', ['$scope',
       'title': 'Team',
       'season': '2015-16',
       'seniors': [{
-        'name': 'Arpit Sharma',
-        'post': 'Team Captain',
-        'img': 'arpit'
-      }, {
         'name': 'Sukrit Mittal',
         'post': 'Vice Captain',
         'img': 'sukrit'
       }, {
+        'name': 'Arpit Sharma',
+        'post': 'Team Captain',
+        'img': 'arpit'
+      }, {
         'name': 'Anant Pathak',
-        'post': 'Driver & Marketing Head',
+        'post': 'Marketing Head',
         'img': 'anant'
       }],
       'members': [{
