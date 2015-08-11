@@ -80,15 +80,15 @@ app.controller('AboutController', ['$scope',
         'img': 'parth'
       }, {
         'name': 'Juhi Kaushik',
-        'post': 'Marketing Member',
+        'post': 'Marketing Manager',
         'img': 'juhi'
       }, {
         'name': 'Amaan Mansuri',
-        'post': 'Marketing Member',
+        'post': 'Marketing Manager',
         'img': 'amaan'
       }, {
         'name': 'Sayantan Biswas',
-        'post': 'Marketing Member',
+        'post': 'Marketing Manager',
         'img': 'shanu'
       }]
     };
