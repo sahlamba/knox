@@ -18,6 +18,18 @@ app.config(['$locationProvider', '$routeProvider',
         templateUrl: 'pages/about/about.html',
         controller: 'AboutController'
       })
+      .when('/baja', {
+        templateUrl: 'pages/baja/baja.html',
+        controller: 'BajaController'
+      })
+      .when('/sponsorship', {
+        templateUrl: 'pages/spons/spons.html',
+        controller: 'SponsController'
+      })
+      .when('/contact', {
+        templateUrl: 'pages/contact/contact.html',
+        controller: 'ContactController'
+      })
       .when('/garage', {
         templateUrl: 'pages/history/history.html',
         controller: 'HistoryController'

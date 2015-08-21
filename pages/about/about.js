@@ -31,7 +31,7 @@ app.controller('AboutController', ['$scope',
       'season': '2015-16',
       'seniors': [{
         'name': 'Sukrit Mittal',
-        'post': 'Vice Captain',
+        'post': 'Vice Captain I',
         'img': 'sukrit'
       }, {
         'name': 'Arpit Sharma',
@@ -39,7 +39,7 @@ app.controller('AboutController', ['$scope',
         'img': 'arpit'
       }, {
         'name': 'Anant Pathak',
-        'post': 'Marketing Head',
+        'post': 'Vice Captain II',
         'img': 'anant'
       }],
       'members': [{
@@ -78,13 +78,14 @@ app.controller('AboutController', ['$scope',
         'name': 'Aayush Parth',
         'post': 'Steering & Brakes Engineer',
         'img': 'parth'
-      }, {
+      }],
+      'marketing': [{
         'name': 'Juhi Kaushik',
         'post': 'Marketing Manager',
         'img': 'juhi'
       }, {
         'name': 'Amaan Mansuri',
-        'post': 'Marketing Manager',
+        'post': 'Marketing Head',
         'img': 'amaan'
       }, {
         'name': 'Sayantan Biswas',
