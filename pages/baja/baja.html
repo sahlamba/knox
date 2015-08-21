@@ -1,0 +1,64 @@
+<section id="baja">
+  <div ng-include src="'navigation'"></div>
+  <div class="row">
+    <div class="col-lg-12 lr-padding tb-padding40">
+      <div class="row">
+        <div class="col-lg-8">
+          <h2 class="text-center" ng-bind="about.title"></h2>
+          <ul>
+            <li ng-repeat="about in about.about">
+              <p ng-bind="about"></p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 baja-logo">
+          <a href="http://www.bajasaeindia.org/" target="_blank">
+            <img alt="BAJA Logo" src="/pages/home/images/baja_logo.png"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 lr-padding tb-padding40 bg-grey">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="text-center" ng-bind="india.title"></h2>
+          <ul>
+            <li ng-repeat="about in india.about">
+              <p ng-bind="about"></p>
+            </li>
+            <li>
+              <a href="http://www.bajasaeindia.org/" style="display:inline-block" target="_blank">
+                <p class="attract">More info</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <h1 class="icon" ng-bind="india.attract1"></h1>
+          <h1 class="icon" ng-bind="india.attract2"></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 lr-padding tb-padding40">
+      <div class="row">
+        <div class="col-lg-3 event" ng-repeat="event in events">
+          <h2 class="text-center" ng-bind="event.title"></h2>
+          <p ng-bind="event.about"></p>
+          <a ng-href="{{event.link}}" ng-if="event.link" target="_blank">
+            <p class="attract">{{event.linkText}}
+              <i class="fa fa-external-link"></i>
+            </p>
+          </a>
+          <img alt="event.imageAlt" ng-if="event.img" ng-src="{{event.img}}"/>
+          <p class="text-light" ng-if="event.img">
+            <em ng-bind="event.imageAlt" style="font-size:11px"></em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,24 @@
+<section id="spons">
+  <div ng-include src="'navigation'"></div>
+  <div class="row">
+    <div class="col-lg-12 lr-padding tb-padding40">
+      <div class="row">
+        <div class="col-lg-8">
+          <h2 class="text-center">Why should you sponsor us?</h2>
+          <ul>
+            <li ng-repeat="why in whys">
+              <p ng-bind="why"></p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <form class="" action="/pages/spons/TeamKNOx_Brochure.pdf" method="get">
+            <button class="download-bttn" name="download" type="submit">Download Sponsorship Brochure
+              <i class="fa fa-download"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -22,7 +22,7 @@
 </section>
 <section id="team">
   <div class="row lr-padding">
-    <h2 class="text-center" ng-bind="team.title">Team</h2>
+    <h2 class="text-center underline">Team Heads</h2>
     <p class="text-center light-text">Season {{team.season}}</p>
     <div class="col-lg-4 text-center team-member" ng-repeat="senior in team.seniors">
       <div class="pic">
@@ -33,6 +33,17 @@
         <p class="light-text" ng-bind="senior.post"></p>
       </div>
     </div>
+    <h2 class="text-center col-lg-12 t-padding20 underline">Marketing Team</h2>
+    <div class="col-lg-4 text-center team-member" ng-repeat="member in team.marketing">
+      <div class="pic">
+        <img ng-src="pages/about/team/{{member.img}}.jpg" class="toggle">
+      </div>
+      <div class="info">
+        <h4 ng-bind="member.name"></h4>
+        <p class="light-text" ng-bind="member.post"></p>
+      </div>
+    </div>
+    <h2 class="text-center col-lg-12 t-padding20 underline">Engineering Team</h2>
     <div class="col-lg-3 text-center team-member" ng-repeat="member in team.members">
       <div class="pic">
         <img ng-src="pages/about/team/{{member.img}}.jpg" class="toggle">
