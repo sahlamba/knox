@@ -33,7 +33,15 @@
         <p class="light-text" ng-bind="senior.post"></p>
       </div>
     </div>
-    <h2 class="text-center col-lg-12 t-padding20 underline">Marketing Team</h2>
+    <div class="col-lg-12 text-center t-padding20">
+      <h2 class="underline" style="display:inline-block">Marketing Team</h2>
+      <a href="#/contact" style="display:inline-block;vertical-align:middle;margin-top:-12px;margin-left:20px">
+        <div class="download-bttn">
+          Contact Us!
+          <i class="fa fa-phone"></i>
+        </div>
+      </a>
+    </div>
     <div class="col-lg-4 text-center team-member" ng-repeat="member in team.marketing">
       <div class="pic">
         <img ng-src="pages/about/team/{{member.img}}.jpg" class="toggle">

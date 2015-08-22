@@ -1,0 +1,55 @@
+<section id="contact">
+  <div ng-include src="'navigation'"></div>
+  <div class="row">
+    <div class="col-lg-12 lr-padding tb-padding40">
+      <h2 style="display:inline-block">Get in touch!</h2>
+      <a href="mailto:knoxracers@gmail.com" style="margin-left:100px">
+        <p class="light-text" style="display:inline-block">
+          <i class="fa fa-envelope"></i>
+          knoxracers@gmail.com
+        </p>
+      </a>
+      <a href="https://www.facebook.com/bajasaeiitr" target="_blank" style="margin-left:100px">
+        <p class="light-text" style="display:inline-block">
+          <i class="fa fa-facebook-square"></i>
+          /bajasaeiitr
+        </p>
+      </a>
+      <div class="row">
+        <div class="col-lg-3 team-member" ng-repeat="contact in contacts">
+          <div class="pic">
+            <img class="toggle" ng-src="pages/about/team/{{contact.img}}.jpg">
+          </div>
+          <div class="info">
+            <h4 ng-bind="contact.name"></h4>
+            <p class="light-text" ng-bind="contact.post"></p>
+            <p>
+              <i class="fa fa-phone"></i>
+              &plus;91&minus;{{contact.phone}}</p>
+            <a ng-href="mailto:{{mail}}" ng-repeat="mail in contact.mails">
+              <p>
+                <i class="fa fa-envelope"></i>
+                {{mail}}</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12 lr-padding tb-padding40">
+      <h2>Our Esteemed Faculty Advisors</h2>
+      <div class="row">
+        <div class="col-lg-4 team-member" ng-repeat="fac in faculty">
+          <div class="pic">
+            <img class="toggle" ng-src="{{fac.img}}">
+          </div>
+          <div class="info">
+            <h4 ng-bind="fac.name"></h4>
+            <p class="light-text" ng-bind="fac.post"></p>
+            <p class="light-text" ng-bind="fac.dept"></p>
+            <p class="" ng-bind="fac.advisory"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -84,7 +84,7 @@ app.controller('AboutController', ['$scope',
         'post': 'Marketing Manager',
         'img': 'juhi'
       }, {
-        'name': 'Amaan Mansuri',
+        'name': 'Aman Mansuri',
         'post': 'Marketing Head',
         'img': 'amaan'
       }, {
