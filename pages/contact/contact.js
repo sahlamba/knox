@@ -15,14 +15,14 @@ app.controller('ContactController', ['$scope',
     }, {
       'name': 'Juhi Kaushik',
       'post': 'Marketing Manager',
-      'phone': '',
-      'mails': [''],
+      'phone': '9045568656',
+      'mails': ['juhikaushik21@gmail.com'],
       'img': 'juhi'
     }, {
       'name': 'Sayantan Biswas',
       'post': 'Marketing Manager',
-      'phone': '',
-      'mails': [''],
+      'phone': '9897833160',
+      'mails': ['sayantan.biswas10@gmail.com'],
       'img': 'shanu'
     }];
 
