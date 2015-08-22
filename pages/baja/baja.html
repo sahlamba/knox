@@ -45,7 +45,7 @@
   <div class="row">
     <div class="col-lg-12 lr-padding tb-padding40">
       <div class="row">
-        <div class="col-lg-3 event" ng-repeat="event in events">
+        <div class="col-lg-3 event" ng-repeat="event in events" style="padding: 0 30px">
           <h2 class="text-center" ng-bind="event.title"></h2>
           <p ng-bind="event.about"></p>
           <a ng-href="{{event.link}}" ng-if="event.link" target="_blank">

@@ -30,28 +30,30 @@ app.controller('BajaController', ['$scope',
 
     $scope.events = [{
       'about': 'Elimination round with 395 teams judged on their design & CAE skills;\
-        held in Chandigarh at Chitkara University.',
+        held in Chandigarh at Chitkara University (July 2015)',
       'link': 'http://www.bajasaeindia.org/pdf/Virtual%20BAJA%202015_Results',
-      'linkText': 'Team KNOx clears Virtual BAJA 2016 securing 48th rank',
+      'linkText': 'Team KNOx clears Virtual BAJA 2015 securing the 48th rank',
       'img': '/pages/baja/virtuals.jpg',
       'imageAlt': 'The Virtuals Team',
       'title': 'Virtuals'
     }, {
       'about': 'Held near Indore at NATRIP facility; Events Divided into two categories\
        i.e. Static & Dynamic. 152 teams are shortlisted from Virtuals to participate here',
+       'img': 'http://www.bajasaeindia.org/index_files/gallery/2011/previews/020.jpg',
+       'imageAlt': 'Qualified vehicles at NATRIP facility, Indore',
       'title': 'Main Event'
     }, {
-      'about': 'Comprise of Design Evaluation, CAE Evaluation, Build Quality Test,\
-       Ecological Idea presentation & Sales Presentation',
-       'img': 'http://www.davisaggiebaja.com/wp-content/uploads/2015/06/TMF_1369-L.jpg',
+      'about': 'Comprises of Design Evaluation, CAE Evaluation, Build Quality Test,\
+       Ecological Idea presentation, Sales Presentation & A Technical Inspection of the vehicle (Days 1 & 2)',
+       'img': 'http://www.bajasaeindia.org/index_files/gallery/2014/previews/003.jpg',
        'imageAlt': 'Technical Inspection',
-      'title': 'Static'
+      'title': 'Static Events'
     }, {
-      'about': 'Comprise of various tests including Braking, Acceleration, Maneuverability,\
-       Hill Climb, Suspension & Traction & a 4-hour long Endurance Race.',
-      'img': 'https://www.rit.edu/news/umag/fall2010/images/p2-baja.jpg',
+      'about': 'Comprises of various tests including Braking, Acceleration, Maneuverability,\
+       Hill Climb, Suspension & Traction & a 4-hour long Endurance Race (Days 3 & 4)',
+      'img': 'http://www.bajasaeindia.org/index_files/gallery/2015_baja/previews/7.jpg',
       'imageAlt': 'The Infamous Endurace Race',
-      'title': 'Dynamic'
+      'title': 'Dynamic Events'
     }];
   }
 ]);
