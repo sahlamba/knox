@@ -1,62 +1,77 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html lang="en" ng-app="knox" ng-controller="MainController">
-<head>
-  <base href="/">
-  <title ng-bind="title"></title>
-  <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
-  <link rel="shortcut icon" href="favicon.ico">
-  <!-- <link href="//fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"> -->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/bootstrap-theme.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/ng-animations.css">
-</head>
-<body class="ng-cloak" ng-cloak>
-  <div ng-view class="slide-top" autoscroll></div>
-  <!-- Navigation Template -->
-  <script type="text/ng-template" id="navigation">
-    <div class="top-bar" sticky>
-      <div class="logo">
-        <a href="#/"><img src="logo.png" class="toggle"></a>
+  <head>
+    <base href="/">
+    <title ng-bind="title"></title>
+    <meta charset="utf-8">
+    <meta content="Team KNOx IIT Roorkee is a group of automobile enthusiasts who
+    specialize in designing and fabrication of All­-Terrain Vehicles. This team
+    represents IIT Roorkee at BAJA SAE India, which is the largest annual
+    inter­collegiate competition to be held across the country where we compete
+    with 300 other colleges. The project is funded corporate sponsors. We work
+    religiously and enjoy every bit of our time in the garage, and winning is
+    what we believe in." name="description">
+    <meta content="team knox,team,knox,atv,all terrain vehicle,all terrain vehicles,all-terrain vehicles,all-terrain vehicle,BAJA,SAE,IIT,IITR,IIT roorkee,roorkee,off road,go off road,off roading,baja sae india,natrip,baja sae,polaris" name="keywords">
+    <meta content="Team KNOx IIT Roorkee" name="author">
+    <meta content="width=device-width" name="viewport">
+    <link href="favicon.ico" rel="shortcut icon">
+<!-- <link href="//fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"> -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/ng-animations.css" rel="stylesheet">
+  </head>
+  <body class="ng-cloak" ng-cloak>
+    <div autoscroll class="slide-top" ng-view></div>
+<!-- Navigation Template -->
+    <script id="navigation" type="text/ng-template">
+      <div class="top-bar" sticky>
+        <div class="logo">
+          <a href="#/"><img class="toggle" src="logo.png"></a>
+        </div>
+        <div class="nav-bar">
+          <ul>
+            <li ng-repeat="value in navObject | orderBy:'value.index'">
+              <a ng-href="{{value.link}}">{{value.text}}</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="nav-bar">
-        <ul>
-          <li ng-repeat="value in navObject | orderBy:'value.index'">
-            <a ng-href="{{value.link}}">{{value.text}}</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="top-bar-margin-cover"></div>
-  </script>
-  <!-- Dependencies -->
-  <script src="scripts/angular.min.js"></script>
-  <script src="scripts/angular-sanitize.min.js"></script>
-  <script src="scripts/angular-route.min.js"></script>
-  <script src="scripts/angular-animate.min.js"></script>
-  <script src="scripts/ui-bootstrap-0.13.0.min.js"></script>
-  <!-- app.js -->
-  <script src="scripts/app.js"></script>
-  <!-- Controllers -->
-  <script src="pages/home/home.js"></script>
-  <script src="pages/about/about.js"></script>
-  <script src="pages/history/history.js"></script>
-  <script src="pages/baja/baja.js"></script>
-  <script src="pages/spons/spons.js"></script>
-  <script src="pages/contact/contact.js"></script>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      <div class="top-bar-margin-cover"></div>
+    </script>
+<!-- Dependencies -->
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-sanitize.min.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
+    <script src="scripts/angular-animate.min.js"></script>
+    <script src="scripts/ui-bootstrap-0.13.0.min.js"></script>
+<!-- app.js -->
+    <script src="scripts/app.js"></script>
+<!-- Controllers -->
+    <script src="pages/home/home.js"></script>
+    <script src="pages/about/about.js"></script>
+    <script src="pages/history/history.js"></script>
+    <script src="pages/baja/baja.js"></script>
+    <script src="pages/spons/spons.js"></script>
+    <script src="pages/contact/contact.js"></script>
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        },
+        i[r].l = 1 * new Date();
+        a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-66634542-1', 'auto');
-    ga('require', 'displayfeatures');
-    ga('send', 'pageview');
-
-  </script>
-</body>
+      ga('create', 'UA-66634542-1', 'auto');
+      ga('require', 'displayfeatures');
+      ga('send', 'pageview');
+    </script>
+  </body>
 </html>
