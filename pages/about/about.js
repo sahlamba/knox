@@ -1,5 +1,5 @@
 app.controller('AboutController', ['$scope',
-  function($scope) {
+  function ($scope) {
     $scope.about = {
       'title': 'About Us',
       'desc': 'Team KNOx IIT Roorkee is a group of automobile enthusiasts who specialize\
@@ -90,6 +90,43 @@ app.controller('AboutController', ['$scope',
         'name': 'Sayantan Biswas',
         'post': 'Marketing Manager',
         'img': 'shanu'
+      }],
+      'lastYearMembers': [{
+        'name': 'Harrit Diwan',
+        'post': 'Team Captain',
+        'img': 'harrit'
+      }, {
+        'name': 'Aman Gupta',
+        'post': 'Marketing Head',
+        'img': 'gupta'
+      }, {
+        'name': 'Arpit Sharma',
+        'post': 'Head of CAE Dept.',
+        'img': 'arpit'
+      }, {
+        'name': 'Anant Pathak',
+        'post': 'Head of Powertrain Dept.',
+        'img': 'anant'
+      }, {
+        'name': 'Sukrit Mittal',
+        'post': 'Head of Wheel Assembly Dept.',
+        'img': 'sukrit'
+      }, {
+        'name': 'Vikrant Yadav',
+        'post': 'Head of Rollcage Dept.',
+        'img': 'vikrant'
+      }, {
+        'name': 'Harish Mahadasu',
+        'post': 'Head of Steering & Brakes Dept.',
+        'img': 'harish'
+      }, {
+        'name': 'Shivam Saxena',
+        'post': 'Head of Suspensions Dept.',
+        'img': 'shivam'
+      }, {
+        'name': 'Varnit Jain',
+        'post': 'Head of Ergonomics Dept.',
+        'img': 'varnit'
       }]
     };
   }

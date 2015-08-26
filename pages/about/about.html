@@ -5,13 +5,12 @@
       <h2 class="text-center" ng-bind="about.title"></h2>
       <p ng-bind="about.desc"></p>
     </div>
-    <div class="col-lg-6 race-bg padding0 toggle">
-    </div>
+    <div class="col-lg-6 race-bg padding0 toggle"></div>
     <div class="col-lg-12 lr-padding tb-padding40 bg-grey">
       <div class="row">
         <div class="col-lg-8">
           <h2 class="text-center" ng-bind="aim.title"></h2>
-          <p ng-repeat="aim in aim.aims" ng-bind="aim"></p>
+          <p ng-bind="aim" ng-repeat="aim in aim.aims"></p>
         </div>
         <div class="col-lg-4">
           <h1 class="icon" ng-bind="aim.gist"></h1>
@@ -23,10 +22,11 @@
 <section id="team">
   <div class="row lr-padding">
     <h2 class="text-center underline">Team Heads</h2>
-    <p class="text-center light-text">Season {{team.season}}</p>
+    <p class="text-center light-text">Season
+      {{team.season}}</p>
     <div class="col-lg-4 text-center team-member" ng-repeat="senior in team.seniors">
       <div class="pic">
-        <img ng-src="pages/about/team/{{senior.img}}.jpg" class="toggle">
+        <img class="toggle" ng-src="pages/about/team/{{senior.img}}.jpg">
       </div>
       <div class="info">
         <h4 ng-bind="senior.name"></h4>
@@ -44,7 +44,7 @@
     </div>
     <div class="col-lg-4 text-center team-member" ng-repeat="member in team.marketing">
       <div class="pic">
-        <img ng-src="pages/about/team/{{member.img}}.jpg" class="toggle">
+        <img class="toggle" ng-src="pages/about/team/{{member.img}}.jpg">
       </div>
       <div class="info">
         <h4 ng-bind="member.name"></h4>
@@ -54,7 +54,21 @@
     <h2 class="text-center col-lg-12 t-padding20 underline">Engineering Team</h2>
     <div class="col-lg-3 text-center team-member" ng-repeat="member in team.members">
       <div class="pic">
-        <img ng-src="pages/about/team/{{member.img}}.jpg" class="toggle">
+        <img class="toggle" ng-src="pages/about/team/{{member.img}}.jpg">
+      </div>
+      <div class="info">
+        <h4 ng-bind="member.name"></h4>
+        <p class="light-text" ng-bind="member.post"></p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="last-team">
+  <div class="row lr-padding">
+    <h2 class="text-center col-lg-12 t-padding20">Team Heads for Season 2014-15</h2>
+    <div class="col-lg-3 text-center team-member" ng-repeat="member in team.lastYearMembers">
+      <div class="pic">
+        <img class="toggle" ng-src="pages/about/team/{{member.img}}.jpg">
       </div>
       <div class="info">
         <h4 ng-bind="member.name"></h4>
