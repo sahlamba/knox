@@ -96,6 +96,10 @@ app.controller('AboutController', ['$scope',
         'post': 'Team Captain',
         'img': 'harrit'
       }, {
+        'name': 'Sukrit Mittal',
+        'post': 'Vice Captain',
+        'img': 'sukrit'
+      }, {
         'name': 'Aman Gupta',
         'post': 'Marketing Head',
         'img': 'gupta'
@@ -108,10 +112,6 @@ app.controller('AboutController', ['$scope',
         'post': 'Head of Powertrain Dept.',
         'img': 'anant'
       }, {
-        'name': 'Sukrit Mittal',
-        'post': 'Head of Wheel Assembly Dept.',
-        'img': 'sukrit'
-      }, {
         'name': 'Vikrant Yadav',
         'post': 'Head of Rollcage Dept.',
         'img': 'vikrant'
@@ -121,7 +121,7 @@ app.controller('AboutController', ['$scope',
         'img': 'harish'
       }, {
         'name': 'Shivam Saxena',
-        'post': 'Head of Suspensions Dept.',
+        'post': 'Head of Vehicle Dynamics Dept.',
         'img': 'shivam'
       }, {
         'name': 'Varnit Jain',
