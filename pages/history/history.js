@@ -1,6 +1,12 @@
 app.controller('HistoryController', ['$scope',
   function($scope) {
     $scope.cars = [{
+      'name': 'Sultan',
+      'year': 2016,
+      'season': '2015-16',
+      'img': 'sultan.jpg',
+      'info': ''
+    }, {
       'name': 'Bruizer',
       'year': 2014,
       'season': '2013-14',

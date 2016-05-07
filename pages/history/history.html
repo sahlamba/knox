@@ -1,6 +1,7 @@
 <section id="garage">
   <div ng-include src="'navigation'"></div>
   <div class="row">
+<!--
     <div class="car col-lg-6 padding0">
       <img src="pages/history/cars/unknown.jpg" alt="Season 2015-16" />
       <div class="details">
@@ -12,6 +13,7 @@
         </div>
       </div>
     </div>
+-->
     <div class="car col-lg-6 padding0" ng-repeat="car in cars">
       <img ng-src="pages/history/cars/{{car.img}}" alt="{{car.name}}" />
       <div class="details">
