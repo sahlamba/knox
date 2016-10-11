@@ -33,7 +33,7 @@ app.controller('BajaController', ['$scope',
         held in Chandigarh at Chitkara University (July 2015)',
       'link': 'http://www.bajasaeindia.org/pdf/Virtual%20BAJA%202015_Results',
       'linkText': 'Team KNOx clears Virtual BAJA 2015 securing the 48th rank',
-      'img': '/pages/baja/virtuals.jpg',
+      'img': 'pages/baja/virtuals.jpg',
       'imageAlt': 'The Virtuals Team',
       'title': 'Virtuals'
     }, {
